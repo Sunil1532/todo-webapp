@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <img src="assets/list.png" class="icon" alt="To-Do Icon" />
+      <h1>To-Do List</h1>
+    </div>
+
+    <form id="todo-form">
+      <input type="text" id="title" placeholder="Enter task title" />
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search tasks..." />
+      <button id="sort-btn">Sort A-Z</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+    <p id="empty-message">No tasks found.</p>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

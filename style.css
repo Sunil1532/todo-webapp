@@ -1,0 +1,215 @@
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 550px;
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+
+  form,
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+
+  button {
+    padding: 12px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  li {
+    background: #fdfdfd;
+    padding: 18px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+
+  li button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: #ff4d4f;
+    transition: background 0.3s;
+  }
+  
+  li button:hover {
+    background: #e60000;
+  }
+
+  #empty-message {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px 15px;
+    }
+  
+    form,
+    .controls {
+      flex-direction: column;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input[type="text"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    li {
+      padding: 15px 16px;
+      font-size: 14px;
+    }
+  
+    li button {
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      padding: 8px 10px;
+    }
+  }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+  
